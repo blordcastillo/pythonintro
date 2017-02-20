@@ -16,8 +16,6 @@ PyEnv
 4. pyenv global
 5. pyenv local
 
-http://sourabhbajaj.com/mac-setup/Python/README.html
-http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 More steps  
 For your .bashrc  
@@ -25,10 +23,11 @@ For your .bashrc
 `gpip(){
    PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }`
-
+  
+  
 ## Windows  
+  
 Never use the default arcpy python (unless you have to)  
-http://docs.python-guide.org/en/latest/starting/install/win/  
   
 1. Install the msi from https://www.python.org/downloads/windows/  
 2. Modify your path in powershell: `[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")`  
@@ -39,8 +38,10 @@ http://docs.python-guide.org/en/latest/starting/install/win/
 7. https://pip.pypa.io/en/latest/user_guide/#installing-from-wheels  
   
 ## Linux  
-http://docs.python-guide.org/en/latest/starting/install/linux/  
-1. Python is already available (if not then `sudo yum install python` or `sudo apt-get install python`)
+  
+1. Python is already available  
+(if not then `sudo yum install python` or  
+`sudo apt-get install python`)
 2. pip install pyenv
 3. Install other versions as needed
 4. pip install virtualenv and use that extensively
@@ -48,3 +49,10 @@ http://docs.python-guide.org/en/latest/starting/install/linux/
 ## The [Conda alternatives](https://conda.io/docs/intro.html)
  * Anaconda and Miniconda  
  * [Taking Conda for a test drive](https://conda.io/docs/test-drive.html)
+  
+## Some great docs  
+  
+ * [Installing on MacOS](http://sourabhbajaj.com/mac-setup/Python/README.html)  
+ * [Installing on Windows](http://docs.python-guide.org/en/latest/starting/install/win/)  
+ * [Installing on Linux](http://docs.python-guide.org/en/latest/starting/install/linux/)  
+ * [Using Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
